@@ -1,10 +1,67 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Covid-19</title>
-</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>COVID-19 Quiz</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery ui CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  </head>
+
+
+
 <body>
-<h1>Covid 19</h1>
-<p>Test Quiz</p>
+  <div class="quiz">
+    <div class="header">
+      <div class="container">
+          <!-- <img src="images/logo.jpg" alt="quiz" /> -->
+      </div>
+    </div>
+    <section>
+      <div class="container">
+          <h1>COVID-19</h1>
+          <p>#Stay Home #Stay Safe</p>
+          <a href="#" id="start" class="btn btn-primary btn-lg">Let's Go</a>
+          <div class="well jumbotron">
+              <div id="progressbar" class="progress-bar progress-bar-striped"></div>
+              <h2 id="question"></h2>
+              <form id="form">
+              </form>
+              <a href="#" id="next" class="button">Next</a><br/>
+          </div>
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><div id="result"></div></td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+    </section>
+  </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/quiz.js"></script>
 </body>
 </html>

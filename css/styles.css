@@ -1,0 +1,137 @@
+/* COMMON CSS START */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f8fd;
+  margin: 0;
+  background-image: url(../images/covid-bg-3.jpg);
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+/* COMMON CSS END */    
+      
+.quiz {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding: 100px 0 0 0;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* HEADER CSS START */
+.quiz .header img {
+  width: 150px;
+  margin: 15px;
+}
+/* HEADER CSS END */
+
+/* SECTION CSS START */
+.quiz section {
+  padding-bottom: 100px;
+}
+.quiz section .jumbotron {
+  background: transparent;
+  padding: 30px 0;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+.quiz section .jumbotron .progress-bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 0px;
+  margin-bottom: 30px;
+  border: 0px solid rgba(204, 204, 204, 0.49019607843137253);
+}
+.quiz section .jumbotron .progress-bar .ui-widget-header {
+  background: #1bb1dc ;
+  border: 1px solid #1bb1dc;
+}
+.quiz section h1{
+  text-align: center;
+  font-size: 32px;
+  margin: 15px 0;
+}
+.quiz section .jumbotron h2 {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.quiz section .jumbotron form {
+  text-align: left;
+}
+.quiz section .jumbotron form div {
+  background-color: #fff;
+  display: flex;
+  border: 1px solid #ccc;
+  align-items: center;
+  color: #000;
+}
+.quiz section .jumbotron form div:hover {
+  background-color: #ececec;
+}
+.quiz section .jumbotron form div label {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.quiz section .jumbotron form div input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.quiz section .jumbotron form div input:checked ~ label {
+  background-color: grey;
+  color: #fff;
+}
+
+.quiz #start, #next {
+  background-color: #1bb1dc;
+  border: 0px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 100px;
+  color: #fff;
+  border: 1px solid #1bb1dc;
+}
+.quiz #start:hover, #next:hover {
+  text-decoration: none;
+  border: 1px solid #1bb1dc;
+  background: transparent;
+  color: #1bb1dc;
+}
+/* SECTION CSS END */
+
+
+
+.leaderboard .table {
+  display: table;
+}
+.table {
+  display: none;
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+/* RESPONSIVE START */
+@media (max-width: 576px) {
+  .quiz .footer .footer-content .designed-by {
+    float: none;
+    text-align: center;
+  }
+  .quiz .footer .footer-content .contact {
+    float: none;
+    text-align: center;
+  } 
+}
+/* RESPONSIVE END */
+
